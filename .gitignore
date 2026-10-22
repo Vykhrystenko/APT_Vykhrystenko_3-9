@@ -1,0 +1,14 @@
+/Pr5/out/
+/Pr5/build/
+vcpkg_installed/
+.vs/
+*.vcxproj.user
+*.aps
+*.suo
+*.user
+*.sdf
+
+*.exe
+*.obj
+*.ilk
+*.pdb
