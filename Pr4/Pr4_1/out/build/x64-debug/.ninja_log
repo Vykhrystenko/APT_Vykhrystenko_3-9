@@ -1,0 +1,5 @@
+# ninja log v7
+8	446	8144010086717791	MatrixLib/CMakeFiles/MatrixLib.dir/src/MatrixLib.cpp.obj	9c4d8e82fadfde0c
+447	517	8144010091110263	MatrixLib/MatrixLib.lib	9f50227df2848eb7
+15	710	8144010086737854	App/CMakeFiles/MyApp.dir/main.cpp.obj	43b1be702de6585a
+711	936	8144010093644556	App/MyApp.exe	f9353889356fd401

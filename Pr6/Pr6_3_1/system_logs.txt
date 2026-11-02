@@ -1,0 +1,122 @@
+[2026-10-28 22:40:52] [Consumer 1] ID: 1 - INFO: User successfully logged into the system
+[2026-10-28 22:40:52] [Consumer 1] ID: 3 - ERROR: Failed to establish database connection
+[2026-10-28 22:40:52] [Consumer 1] ID: 5 - INFO: User successfully logged into the system
+[2026-10-28 22:40:53] [Consumer 1] ID: 7 - ERROR: Failed to establish database connection
+[2026-10-28 22:40:53] [Consumer 1] ID: 9 - INFO: User successfully logged into the system
+[2026-10-28 22:40:53] [Consumer 1] ID: 11 - ERROR: Failed to establish database connection
+[2026-10-28 22:40:52] [Consumer 2] ID: 2 - WARNING: High CPU temperature detected
+[2026-10-28 22:40:52] [Consumer 2] ID: 4 - DEBUG: Cache refreshed successfully
+[2026-10-28 22:40:53] [Consumer 2] ID: 6 - WARNING: High CPU temperature detected
+[2026-10-28 22:40:53] [Consumer 2] ID: 8 - DEBUG: Cache refreshed successfully
+[2026-10-28 22:40:53] [Consumer 2] ID: 10 - WARNING: High CPU temperature detected
+[2026-10-28 22:40:53] [Consumer 2] ID: 12 - DEBUG: Cache refreshed successfully
+[2026-10-28 22:47:25] [Consumer 1] ID: 1 - INFO: User successfully logged into the system
+[2026-10-28 22:47:25] [Consumer 1] ID: 3 - ERROR: Failed to establish database connection
+[2026-10-28 22:47:25] [Consumer 1] ID: 5 - INFO: User successfully logged into the system
+[2026-10-28 22:47:25] [Consumer 1] ID: 7 - ERROR: Failed to establish database connection
+[2026-10-28 22:47:25] [Consumer 1] ID: 9 - INFO: User successfully logged into the system
+[2026-10-28 22:47:26] [Consumer 1] ID: 11 - ERROR: Failed to establish database connection
+[2026-10-28 22:47:25] [Consumer 2] ID: 2 - WARNING: High CPU temperature detected
+[2026-10-28 22:47:25] [Consumer 2] ID: 4 - DEBUG: Cache refreshed successfully
+[2026-10-28 22:47:25] [Consumer 2] ID: 6 - WARNING: High CPU temperature detected
+[2026-10-28 22:47:25] [Consumer 2] ID: 8 - DEBUG: Cache refreshed successfully
+[2026-10-28 22:47:26] [Consumer 2] ID: 10 - WARNING: High CPU temperature detected
+[2026-10-28 22:47:26] [Consumer 2] ID: 12 - DEBUG: Cache refreshed successfully
+[2026-10-28 23:07:42] [Consumer 1] ID: 1 - INFO: User successfully logged into the system
+[2026-10-28 23:07:42] [Consumer 1] ID: 3 - ERROR: Failed to establish database connection
+[2026-10-28 23:07:42] [Consumer 1] ID: 5 - INFO: User successfully logged into the system
+[2026-10-28 23:07:42] [Consumer 1] ID: 7 - ERROR: Failed to establish database connection
+[2026-10-28 23:07:42] [Consumer 1] ID: 9 - INFO: User successfully logged into the system
+[2026-10-28 23:07:43] [Consumer 1] ID: 11 - ERROR: Failed to establish database connection
+[2026-10-28 23:07:42] [Consumer 2] ID: 2 - WARNING: High CPU temperature detected
+[2026-10-28 23:07:42] [Consumer 2] ID: 4 - DEBUG: Cache refreshed successfully
+[2026-10-28 23:07:42] [Consumer 2] ID: 6 - WARNING: High CPU temperature detected
+[2026-10-28 23:07:42] [Consumer 2] ID: 8 - DEBUG: Cache refreshed successfully
+[2026-10-28 23:07:42] [Consumer 2] ID: 10 - WARNING: High CPU temperature detected
+[2026-10-28 23:07:43] [Consumer 2] ID: 12 - DEBUG: Cache refreshed successfully
+[2026-10-28 23:09:07] [Consumer 2] ID: 1 - INFO: User successfully logged into the system
+[2026-10-28 23:09:07] [Consumer 2] ID: 3 - ERROR: Failed to establish database connection
+[2026-10-28 23:09:07] [Consumer 2] ID: 5 - INFO: User successfully logged into the system
+[2026-10-28 23:09:07] [Consumer 2] ID: 7 - ERROR: Failed to establish database connection
+[2026-10-28 23:09:08] [Consumer 2] ID: 9 - INFO: User successfully logged into the system
+[2026-10-28 23:09:08] [Consumer 2] ID: 11 - ERROR: Failed to establish database connection
+[2026-10-28 23:09:07] [Consumer 1] ID: 2 - WARNING: High CPU temperature detected
+[2026-10-28 23:09:07] [Consumer 1] ID: 4 - DEBUG: Cache refreshed successfully
+[2026-10-28 23:09:07] [Consumer 1] ID: 6 - WARNING: High CPU temperature detected
+[2026-10-28 23:09:08] [Consumer 1] ID: 8 - DEBUG: Cache refreshed successfully
+[2026-10-28 23:09:08] [Consumer 1] ID: 10 - WARNING: High CPU temperature detected
+[2026-10-28 23:09:08] [Consumer 1] ID: 12 - DEBUG: Cache refreshed successfully
+[2026-10-28 23:10:25] [Consumer 4] ID: 1 - INFO: User successfully logged into the system
+[2026-10-28 23:10:26] [Consumer 4] ID: 5 - INFO: User successfully logged into the system
+[2026-10-28 23:10:26] [Consumer 4] ID: 9 - INFO: User successfully logged into the system
+
+[2026-10-28 23:10:26] [Consumer 1] ID: 4 - DEBUG: Cache refreshed successfully
+[2026-10-28 23:10:26] [Consumer 1] ID: 8 - DEBUG: Cache refreshed successfully
+[2026-10-28 23:10:27] [Consumer 1] ID: 12 - DEBUG: Cache refreshed successfully
+[2026-10-28 23:10:34] [Consumer 3] ID: 1 - INFO: User successfully logged into the system
+[2026-10-28 23:10:35] [Consumer 3] ID: 5 - INFO: User successfully logged into the system
+[2026-10-28 23:10:35] [Consumer 3] ID: 9 - INFO: User successfully logged into the system
+
+[2026-10-28 23:10:34] [Consumer 4] ID: 4 - DEBUG: Cache refreshed successfully
+[2026-10-28 23:10:35] [Consumer 4] ID: 8 - DEBUG: Cache refreshed successfully
+[2026-10-28 23:10:35] [Consumer 4] ID: 12 - DEBUG: Cache refreshed successfully
+[2026-10-28 23:10:40] [Consumer 1] ID: 3 - ERROR: Failed to establish database connection
+[2026-10-28 23:10:40] [Consumer 1] ID: 7 - ERROR: Failed to establish database connection
+[2026-10-28 23:10:40] [Consumer 1] ID: 11 - ERROR: Failed to establish database connection
+[2026-10-28 23:10:40] [Consumer 2] ID: 4 - DEBUG: Cache refreshed successfully
+[2026-10-28 23:10:40] [Consumer 2] ID: 8 - DEBUG: Cache refreshed successfully
+[2026-10-28 23:10:41] [Consumer 2] ID: 12 - DEBUG: Cache refreshed successfully
+[2026-10-29 00:29:16] [Consumer 1] ID: 1 - INFO: User successfully logged into the system
+[2026-10-29 00:29:16] [Consumer 1] ID: 2 - WARNING: High CPU temperature detected
+[2026-10-29 00:29:16] [Consumer 1] ID: 3 - ERROR: Failed to establish database connection
+[2026-10-29 00:29:16] [Consumer 1] ID: 4 - DEBUG: Cache refreshed successfully
+[2026-10-29 00:29:16] [Consumer 1] ID: 5 - INFO: User successfully logged into the system
+[2026-10-29 00:29:16] [Consumer 1] ID: 6 - WARNING: High CPU temperature detected
+[2026-10-29 00:29:16] [Consumer 1] ID: 7 - ERROR: Failed to establish database connection
+[2026-10-29 00:29:16] [Consumer 1] ID: 8 - DEBUG: Cache refreshed successfully
+[2026-10-29 00:29:16] [Consumer 1] ID: 9 - INFO: User successfully logged into the system
+[2026-10-29 00:29:17] [Consumer 1] ID: 10 - WARNING: High CPU temperature detected
+[2026-10-29 00:29:17] [Consumer 1] ID: 11 - ERROR: Failed to establish database connection
+[2026-10-29 00:29:17] [Consumer 1] ID: 12 - DEBUG: Cache refreshed successfully
+[2026-10-29 00:30:40] [Consumer 2] ID: 1 - INFO: User successfully logged into the system
+[2026-10-29 00:30:41] [Consumer 2] ID: 3 - ERROR: Failed to establish database connection
+[2026-10-29 00:30:41] [Consumer 2] ID: 5 - INFO: User successfully logged into the system
+[2026-10-29 00:30:41] [Consumer 2] ID: 7 - ERROR: Failed to establish database connection
+[2026-10-29 00:30:41] [Consumer 2] ID: 9 - INFO: User successfully logged into the system
+[2026-10-29 00:30:41] [Consumer 2] ID: 11 - ERROR: Failed to establish database connection
+[2026-10-29 00:30:40] [Consumer 1] ID: 2 - WARNING: High CPU temperature detected
+[2026-10-29 00:30:41] [Consumer 1] ID: 4 - DEBUG: Cache refreshed successfully
+[2026-10-29 00:30:41] [Consumer 1] ID: 6 - WARNING: High CPU temperature detected
+[2026-10-29 00:30:41] [Consumer 1] ID: 8 - DEBUG: Cache refreshed successfully
+[2026-10-29 00:30:41] [Consumer 1] ID: 10 - WARNING: High CPU temperature detected
+[2026-10-29 00:30:42] [Consumer 1] ID: 12 - DEBUG: Cache refreshed successfully
+[2026-10-29 00:32:05] [Consumer 1] ID: 1 - INFO: User successfully logged into the system
+[2026-10-29 00:32:06] [Consumer 1] ID: 3 - ERROR: Failed to establish database connection
+[2026-10-29 00:32:06] [Consumer 1] ID: 6 - WARNING: High CPU temperature detected
+[2026-10-29 00:32:06] [Consumer 1] ID: 8 - DEBUG: Cache refreshed successfully
+[2026-10-29 00:32:06] [Consumer 1] ID: 10 - WARNING: High CPU temperature detected
+[2026-10-29 00:32:07] [Consumer 1] ID: 11 - ERROR: Failed to establish database connection
+[2026-10-29 00:34:55] [Consumer 1] ID: 1 - INFO: User successfully logged into the system
+[2026-10-29 00:34:55] [Consumer 1] ID: 3 - ERROR: Failed to establish database connection
+[2026-10-29 00:34:55] [Consumer 1] ID: 5 - INFO: User successfully logged into the system
+[2026-10-29 00:34:56] [Consumer 1] ID: 7 - ERROR: Failed to establish database connection
+[2026-10-29 00:34:56] [Consumer 1] ID: 9 - INFO: User successfully logged into the system
+[2026-10-29 00:34:56] [Consumer 1] ID: 11 - ERROR: Failed to establish database connection
+[2026-10-29 00:34:55] [Consumer 2] ID: 2 - WARNING: High CPU temperature detected
+[2026-10-29 00:34:55] [Consumer 2] ID: 4 - DEBUG: Cache refreshed successfully
+[2026-10-29 00:34:56] [Consumer 2] ID: 6 - WARNING: High CPU temperature detected
+[2026-10-29 00:34:56] [Consumer 2] ID: 8 - DEBUG: Cache refreshed successfully
+[2026-10-29 00:34:56] [Consumer 2] ID: 10 - WARNING: High CPU temperature detected
+[2026-10-29 00:34:56] [Consumer 2] ID: 12 - DEBUG: Cache refreshed successfully
+[2026-10-29 00:38:30] [Consumer 1] ID: 1 - INFO: User successfully logged into the system
+[2026-10-29 00:38:30] [Consumer 1] ID: 3 - ERROR: Failed to establish database connection
+[2026-10-29 00:38:30] [Consumer 1] ID: 5 - INFO: User successfully logged into the system
+[2026-10-29 00:38:30] [Consumer 1] ID: 7 - ERROR: Failed to establish database connection
+[2026-10-29 00:38:31] [Consumer 1] ID: 9 - INFO: User successfully logged into the system
+[2026-10-29 00:38:31] [Consumer 1] ID: 11 - ERROR: Failed to establish database connection
+[2026-10-29 00:38:30] [Consumer 2] ID: 2 - WARNING: High CPU temperature detected
+[2026-10-29 00:38:30] [Consumer 2] ID: 4 - DEBUG: Cache refreshed successfully
+[2026-10-29 00:38:30] [Consumer 2] ID: 6 - WARNING: High CPU temperature detected
+[2026-10-29 00:38:31] [Consumer 2] ID: 8 - DEBUG: Cache refreshed successfully
+[2026-10-29 00:38:31] [Consumer 2] ID: 10 - WARNING: High CPU temperature detected
+[2026-10-29 00:38:31] [Consumer 2] ID: 12 - DEBUG: Cache refreshed successfully
