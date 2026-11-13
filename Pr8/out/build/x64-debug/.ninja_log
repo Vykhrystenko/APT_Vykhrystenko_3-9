@@ -1,0 +1,16 @@
+# ninja log v7
+39	791	8161435987321798	CMakeFiles/EventLogLab8.dir/src/RawSqliteRepository.cpp.obj	c16a6183b7b3a098
+21	3037	8161435987120058	CMakeFiles/EventLogLab8.dir/src/SQLiteEventSourceRepository.cpp.obj	2d97f7194286f868
+14	3078	8161435986959530	CMakeFiles/EventLogLab8.dir/src/Database.cpp.obj	9d4edd0f121cdbbb
+29	3112	8161435987120058	CMakeFiles/EventLogLab8.dir/src/LogEntryRepository.cpp.obj	fe48b33c3728d9b5
+7	4096	8161435986959530	CMakeFiles/EventLogLab8.dir/src/main.cpp.obj	419dcb2b1ad0497f
+4097	4629	8161436027843989	EventLogLab8.exe	5662fc097a4fdb8b
+76	1470	8162858583202729	CMakeFiles/EventLogLab8.dir/src/RawSqliteRepository.cpp.obj	c16a6183b7b3a098
+58	3587	8162858582996258	CMakeFiles/EventLogLab8.dir/src/SQLiteEventSourceRepository.cpp.obj	2d97f7194286f868
+47	3647	8162858582934904	CMakeFiles/EventLogLab8.dir/src/Database.cpp.obj	9d4edd0f121cdbbb
+68	3731	8162858583149355	CMakeFiles/EventLogLab8.dir/src/LogEntryRepository.cpp.obj	fe48b33c3728d9b5
+36	4891	8162858582815002	CMakeFiles/EventLogLab8.dir/src/main.cpp.obj	419dcb2b1ad0497f
+4892	5460	8162858631411229	EventLogLab8.exe	5662fc097a4fdb8b
+17	3334	8162873873992689	CMakeFiles/EventLogLab8.dir/src/Database.cpp.obj	9d4edd0f121cdbbb
+9	4334	8162873873992689	CMakeFiles/EventLogLab8.dir/src/main.cpp.obj	419dcb2b1ad0497f
+4334	4679	8162873917239553	EventLogLab8.exe	5662fc097a4fdb8b

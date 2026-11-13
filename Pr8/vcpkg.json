@@ -1,0 +1,9 @@
+{
+  "name": "event-log-lab8-variant1",
+  "version-string": "1.0.0",
+  "dependencies": [
+    "sqlite3",
+    "sqlite-orm"
+  ],
+  "builtin-baseline": "b58529e33332fbb6dfe20317a82009b78ceeab36"
+}

@@ -1,0 +1,40 @@
+Fetching registry information from https://github.com/microsoft/vcpkg (HEAD)...
+Detecting compiler hash for triplet x64-windows...
+Compiler found: C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.51.36231/bin/Hostx64/x64/cl.exe
+The following packages will be built and installed:
+    sqlite-orm:x64-windows@1.9.1 -- git+https://github.com/microsoft/vcpkg@bc8cbd8ea3c6b8e883dc338e94cdb3188539fed8
+    sqlite3[core,json1]:x64-windows@3.54.1 -- git+https://github.com/microsoft/vcpkg@603ae9e17b08b01ee35b063c4c5862896986942e
+  * vcpkg-cmake:x64-windows@2025-08-07 -- git+https://github.com/microsoft/vcpkg@16b9390dfeaca6df7288ba3f827e40e48e5fc942
+  * vcpkg-cmake-config:x64-windows@2026-07-21 -- git+https://github.com/microsoft/vcpkg@51befcb03097f8d19c1c59f9ec3625e69d85322a
+Additional packages (*) will be modified to complete this operation.
+Restored 4 package(s) from C:\Users\vladi\AppData\Local\vcpkg\archives in 129 ms. Use --debug to see more details.
+Installing 1/4 vcpkg-cmake-config:x64-windows@2026-07-21...
+vcpkg-cmake-config:x64-windows@2026-07-21 package ABI: b0b5f419e1b6d4ef6060267c9beb26078883ea83be1f1372125387c62b453a46
+Elapsed time to handle vcpkg-cmake-config:x64-windows: 38.8 ms
+Installing 2/4 vcpkg-cmake:x64-windows@2025-08-07...
+vcpkg-cmake:x64-windows@2025-08-07 package ABI: 8d656677ec4b75baa3c400bae7f28434b1c4212a7f1a03e7cd3be1ec99959ed5
+Elapsed time to handle vcpkg-cmake:x64-windows: 63.9 ms
+Installing 3/4 sqlite3[core,json1]:x64-windows@3.54.1...
+sqlite3[core,json1]:x64-windows@3.54.1 package ABI: ae25daa0fb9405dfabfc8e177b6b5efccbc90ecc4799aa9eaf0e61116c67db43
+Elapsed time to handle sqlite3:x64-windows: 38.4 ms
+Installing 4/4 sqlite-orm:x64-windows@1.9.1...
+sqlite-orm:x64-windows@1.9.1 package ABI: f1dac65ad5127e9f77f1c604314e341f9a06f52ce1543a03d43175ff8e7848b0
+Elapsed time to handle sqlite-orm:x64-windows: 49 ms
+Installed contents are licensed to you by owners. Microsoft is not responsible for, nor does it grant any licenses to, third-party packages.
+Packages installed in this vcpkg installation declare the following licenses:
+(AGPL-3.0-or-later OR MIT)
+MIT
+blessing
+sqlite3 provides pkgconfig bindings.
+sqlite3 provides CMake targets:
+
+    find_package(unofficial-sqlite3 CONFIG REQUIRED)
+    target_link_libraries(main PRIVATE unofficial::sqlite3::sqlite3)
+
+sqlite-orm provides CMake targets:
+
+  # this is heuristically generated, and may not be correct
+  find_package(SqliteOrm CONFIG REQUIRED)
+  target_link_libraries(main PRIVATE sqlite_orm::sqlite_orm)
+
+All requested installations completed successfully in: 197 ms

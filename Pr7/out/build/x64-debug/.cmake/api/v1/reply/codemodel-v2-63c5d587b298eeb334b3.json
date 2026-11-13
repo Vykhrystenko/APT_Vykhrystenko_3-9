@@ -1,0 +1,132 @@
+{
+	"configurations" : 
+	[
+		{
+			"abstractTargets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "GTest::gmock::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-GTest__gmock-Debug-dcf3ba05a1644494846c.json",
+					"name" : "GTest::gmock",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "GTest::gmock_main::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-GTest__gmock_main-Debug-602b37d838c70db1fd86.json",
+					"name" : "GTest::gmock_main",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "GTest::gtest::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-GTest__gtest-Debug-dfb29c4198982f1e95b9.json",
+					"name" : "GTest::gtest",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "GTest::gtest_main::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-GTest__gtest_main-Debug-d9830709861b4780b699.json",
+					"name" : "GTest::gtest_main",
+					"projectIndex" : 0
+				}
+			],
+			"directories" : 
+			[
+				{
+					"abstractTargetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					],
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-f040eec181a89de70dbe.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.21"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"abstractTargetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "MatrixLibLab",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "AntipatternDemo::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-AntipatternDemo-Debug-a5a0c57bc21836a6e00e.json",
+					"name" : "AntipatternDemo",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "MatrixDemo::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-MatrixDemo-Debug-66add5c64cc0b274461e.json",
+					"name" : "MatrixDemo",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "MatrixLib::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-MatrixLib-Debug-8cb14cc3e72e5330a30e.json",
+					"name" : "MatrixLib",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "MatrixTests::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-MatrixTests-Debug-f6d217883e13698a29e8.json",
+					"name" : "MatrixTests",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "D:/Learning/repos/APT/APT_Vykhrystenko_3-9/Pr7/out/build/x64-debug",
+		"source" : "D:/Learning/repos/APT/APT_Vykhrystenko_3-9/Pr7"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 10
+	}
+}

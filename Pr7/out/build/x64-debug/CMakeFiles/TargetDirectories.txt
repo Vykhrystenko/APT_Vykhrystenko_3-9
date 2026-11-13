@@ -1,0 +1,7 @@
+D:/Learning/repos/APT/APT_Vykhrystenko_3-9/Pr7/out/build/x64-debug/CMakeFiles/MatrixLib.dir
+D:/Learning/repos/APT/APT_Vykhrystenko_3-9/Pr7/out/build/x64-debug/CMakeFiles/MatrixDemo.dir
+D:/Learning/repos/APT/APT_Vykhrystenko_3-9/Pr7/out/build/x64-debug/CMakeFiles/AntipatternDemo.dir
+D:/Learning/repos/APT/APT_Vykhrystenko_3-9/Pr7/out/build/x64-debug/CMakeFiles/MatrixTests.dir
+D:/Learning/repos/APT/APT_Vykhrystenko_3-9/Pr7/out/build/x64-debug/CMakeFiles/test.dir
+D:/Learning/repos/APT/APT_Vykhrystenko_3-9/Pr7/out/build/x64-debug/CMakeFiles/edit_cache.dir
+D:/Learning/repos/APT/APT_Vykhrystenko_3-9/Pr7/out/build/x64-debug/CMakeFiles/rebuild_cache.dir

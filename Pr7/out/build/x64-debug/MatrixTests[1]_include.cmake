@@ -1,0 +1,5 @@
+if(EXISTS "D:/Learning/repos/APT/APT_Vykhrystenko_3-9/Pr7/out/build/x64-debug/MatrixTests[1]_tests.cmake")
+  include("D:/Learning/repos/APT/APT_Vykhrystenko_3-9/Pr7/out/build/x64-debug/MatrixTests[1]_tests.cmake")
+else()
+  add_test(MatrixTests_NOT_BUILT MatrixTests_NOT_BUILT)
+endif()
