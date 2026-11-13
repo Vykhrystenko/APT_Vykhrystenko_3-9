@@ -1,9 +1,0 @@
-{
-	"InstallScripts" : 
-	[
-		"D:/Learning/repos/APT/APT_Vykhrystenko_3-9/Pr4/Pr4_1/out/build/x64-debug/cmake_install.cmake",
-		"D:/Learning/repos/APT/APT_Vykhrystenko_3-9/Pr4/Pr4_1/out/build/x64-debug/MatrixLib/cmake_install.cmake",
-		"D:/Learning/repos/APT/APT_Vykhrystenko_3-9/Pr4/Pr4_1/out/build/x64-debug/App/cmake_install.cmake"
-	],
-	"Parallel" : false
-}

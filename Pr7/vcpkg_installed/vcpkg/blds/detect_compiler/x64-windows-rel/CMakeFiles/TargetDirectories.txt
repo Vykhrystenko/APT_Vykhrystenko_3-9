@@ -1,0 +1,2 @@
+D:/Learning/repos/APT/APT_Vykhrystenko_3-9/Pr7/vcpkg_installed/vcpkg/blds/detect_compiler/x64-windows-rel/CMakeFiles/edit_cache.dir
+D:/Learning/repos/APT/APT_Vykhrystenko_3-9/Pr7/vcpkg_installed/vcpkg/blds/detect_compiler/x64-windows-rel/CMakeFiles/rebuild_cache.dir

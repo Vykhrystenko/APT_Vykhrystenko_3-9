@@ -1,3 +1,0 @@
-D:/Learning/repos/APT/APT_Vykhrystenko_3-9/Pr8/out/build/x64-debug/CMakeFiles/EventLogLab8.dir
-D:/Learning/repos/APT/APT_Vykhrystenko_3-9/Pr8/out/build/x64-debug/CMakeFiles/edit_cache.dir
-D:/Learning/repos/APT/APT_Vykhrystenko_3-9/Pr8/out/build/x64-debug/CMakeFiles/rebuild_cache.dir

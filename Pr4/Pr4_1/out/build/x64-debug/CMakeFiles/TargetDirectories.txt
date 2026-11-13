@@ -1,8 +1,0 @@
-D:/Learning/repos/APT/APT_Vykhrystenko_3-9/Pr4/Pr4_1/out/build/x64-debug/CMakeFiles/edit_cache.dir
-D:/Learning/repos/APT/APT_Vykhrystenko_3-9/Pr4/Pr4_1/out/build/x64-debug/CMakeFiles/rebuild_cache.dir
-D:/Learning/repos/APT/APT_Vykhrystenko_3-9/Pr4/Pr4_1/out/build/x64-debug/MatrixLib/CMakeFiles/MatrixLib.dir
-D:/Learning/repos/APT/APT_Vykhrystenko_3-9/Pr4/Pr4_1/out/build/x64-debug/MatrixLib/CMakeFiles/edit_cache.dir
-D:/Learning/repos/APT/APT_Vykhrystenko_3-9/Pr4/Pr4_1/out/build/x64-debug/MatrixLib/CMakeFiles/rebuild_cache.dir
-D:/Learning/repos/APT/APT_Vykhrystenko_3-9/Pr4/Pr4_1/out/build/x64-debug/App/CMakeFiles/MyApp.dir
-D:/Learning/repos/APT/APT_Vykhrystenko_3-9/Pr4/Pr4_1/out/build/x64-debug/App/CMakeFiles/edit_cache.dir
-D:/Learning/repos/APT/APT_Vykhrystenko_3-9/Pr4/Pr4_1/out/build/x64-debug/App/CMakeFiles/rebuild_cache.dir
