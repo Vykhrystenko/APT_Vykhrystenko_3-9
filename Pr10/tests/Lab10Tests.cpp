@@ -99,7 +99,7 @@ TEST_F(PriorityStrategyTest, RejectsInvalidInput) {
 }
 
 // Перевірка відхилення нульового вказівника на стратегію.
-TEST(PriorityStrategyTest, RejectsNullStrategy) {
+TEST_F(PriorityStrategyTest, RejectsNullStrategy) {
     EXPECT_THROW(
         PriorityContext(nullptr),
         std::invalid_argument
@@ -192,14 +192,15 @@ protected:
         initializeDatabase();
 
         // Створюємо окреме тестове джерело.
+        EventSource testSource;
+
+        testSource.name = "Lab10 Test Source";
+        testSource.sourceType = "Test";
+        testSource.location = "Localhost";
+        testSource.isActive = true;
+
         sourceId = static_cast<int>(
-            getStorage().insert({
-                0,
-                "Lab10 Test Source",
-                "Test",
-                "Localhost",
-                true
-                })
+            getStorage().insert(testSource)
             );
     }
 

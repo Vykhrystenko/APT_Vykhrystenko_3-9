@@ -1,150 +1,158 @@
-
-#include "Database.h"
-#include "LogEntryRepository.h"
-#include "LogEntryState.h"
 #include "LogEventObserver.h"
-#include "PriorityStrategy.h"
 
-#include <gtest/gtest.h>
-#include <memory>
-#include <cmath>
+#include <algorithm>
+#include <stdexcept>
+#include <vector>
 
-// ================= STRATEGY =================
+namespace {
 
-// Перевірка першого алгоритму.
-TEST(StrategyTest, MaximumValue) {
-    MaximumPriorityFactory factory;
-    PriorityContext context(factory.createStrategy());
+    // Перетворення типу події на текст.
+    const char* eventTypeToString(LogEventType type) {
+        switch (type) {
+        case LogEventType::RecordReceived:
+            return "RecordReceived";
 
-    EXPECT_DOUBLE_EQ(
-        context.calculate({ 8.0, 6.0, 30.0 }), 8.0
-    );
-}
+        case LogEventType::StatusChanged:
+            return "StatusChanged";
 
-// Перевірка другого алгоритму.
-TEST(StrategyTest, WeightedSum) {
-    WeightedSumFactory factory;
-    PriorityContext context(factory.createStrategy());
+        case LogEventType::ProcessingCompleted:
+            return "ProcessingCompleted";
+        }
 
-    EXPECT_NEAR(
-        context.calculate({ 8.0, 6.0, 30.0 }), 6.8, 0.000001
-    );
-}
-
-// Перевірка третього алгоритму.
-TEST(StrategyTest, NormalizedWeightedSum) {
-    NormalizedWeightedSumFactory factory;
-    PriorityContext context(factory.createStrategy());
-
-    EXPECT_NEAR(
-        context.calculate({ 8.0, 6.0, 30.0 }), 0.68, 0.000001
-    );
-}
-
-// ================= OBSERVER =================
-
-class TestObserver : public ILogEventObserver {
-public:
-    int count = 0;
-
-    void update(const LogEvent&) override {
-        ++count;
-    }
-};
-
-// Перевірка отримання події підписником.
-TEST(ObserverTest, ReceivesEvent) {
-    LogEventPublisher publisher;
-    auto observer = std::make_shared<TestObserver>();
-
-    publisher.subscribe(observer);
-
-    publisher.publish({
-        LogEventType::RecordReceived,
-        1, "INFO", "Test", "New entry"
-        });
-
-    EXPECT_EQ(observer->count, 1);
-}
-
-// Перевірка відключення підписника.
-TEST(ObserverTest, Unsubscribe) {
-    LogEventPublisher publisher;
-    auto observer = std::make_shared<TestObserver>();
-
-    publisher.subscribe(observer);
-    publisher.unsubscribe(observer);
-
-    publisher.publish({
-        LogEventType::RecordReceived,
-        1, "INFO", "Test", "New entry"
-        });
-
-    EXPECT_EQ(observer->count, 0);
-}
-
-// ================= STATE =================
-
-// Створення тестового запису в базі даних.
-int createTestEntry() {
-    static int sourceId = 0;
-
-    if (sourceId == 0) {
-        sourceId = static_cast<int>(
-            getStorage().insert({
-                0, "Test Source", "Test", "Localhost", true
-                })
-            );
+        return "Unknown";
     }
 
-    LogEntry entry;
-    entry.eventSourceId = sourceId;
-    entry.timestamp = "2026-11-23 12:00:00";
-    entry.level = "INFO";
-    entry.message = "Test entry";
-    entry.durationMs = 100;
-    entry.importance = 8;
-    entry.urgency = 6;
-    entry.waitingTimeMinutes = 30;
-    entry.status = "Новий";
-
-    LogEntryRepository repository;
-    return repository.add(entry);
 }
 
-// Перевірка дозволених переходів.
-TEST(StateTest, ValidTransitions) {
-    initializeDatabase();
+// ================= LOG EVENT PUBLISHER =================
 
-    LogEntryRepository repository;
-    LogEventPublisher publisher;
+// Додавання спостерігача.
+void LogEventPublisher::subscribe(
+    const std::shared_ptr<ILogEventObserver>& observer
+) {
+    if (!observer) {
+        throw std::invalid_argument(
+            "Observer cannot be null."
+        );
+    }
 
-    int id = createTestEntry();
-
-    LogEntryWorkflow workflow(id, repository, publisher);
-
-    workflow.check();
-    EXPECT_EQ(workflow.currentStatus(), "Перевірений");
-
-    workflow.process();
-    EXPECT_EQ(workflow.currentStatus(), "Опрацьований");
-}
-
-// Перевірка забороненого переходу.
-TEST(StateTest, InvalidTransition) {
-    initializeDatabase();
-
-    LogEntryRepository repository;
-    LogEventPublisher publisher;
-
-    int id = createTestEntry();
-
-    LogEntryWorkflow workflow(id, repository, publisher);
-
-    EXPECT_THROW(
-        workflow.process(),
-        std::logic_error
+    // Видаляємо неактивні посилання.
+    observers.erase(
+        std::remove_if(
+            observers.begin(),
+            observers.end(),
+            [](const std::weak_ptr<ILogEventObserver>& item) {
+                return item.expired();
+            }
+        ),
+        observers.end()
     );
 
-    EXPECT_EQ(workflow.currentStatus(), "Новий");
+    // Перевіряємо, чи вже підписаний спостерігач.
+    for (const auto& item : observers) {
+        if (item.lock() == observer) {
+            return;
+        }
+    }
+
+    observers.push_back(observer);
+}
+
+// Відписка спостерігача.
+void LogEventPublisher::unsubscribe(
+    const std::shared_ptr<ILogEventObserver>& observer
+) {
+    observers.erase(
+        std::remove_if(
+            observers.begin(),
+            observers.end(),
+            [&observer](const std::weak_ptr<ILogEventObserver>& item) {
+                const auto current = item.lock();
+
+                return !current || current == observer;
+            }
+        ),
+        observers.end()
+    );
+}
+
+// Розсилання події всім активним спостерігачам.
+void LogEventPublisher::publish(const LogEvent& event) {
+    std::vector<std::shared_ptr<ILogEventObserver>> activeObservers;
+
+    // Отримуємо активних спостерігачів.
+    for (auto it = observers.begin(); it != observers.end();) {
+        if (auto observer = it->lock()) {
+            activeObservers.push_back(observer);
+            ++it;
+        }
+        else {
+            it = observers.erase(it);
+        }
+    }
+
+    // Повідомляємо спостерігачів про подію.
+    for (const auto& observer : activeObservers) {
+        observer->update(event);
+    }
+}
+
+// ================= AUDIT LOG OBSERVER =================
+
+AuditLogObserver::AuditLogObserver(
+    const std::string& fileName
+)
+    : output(fileName, std::ios::out | std::ios::app) {
+
+    if (!output.is_open()) {
+        throw std::runtime_error(
+            "Cannot open audit log file."
+        );
+    }
+}
+
+// Запис події до файлу аудиту.
+void AuditLogObserver::update(const LogEvent& event) {
+    output
+        << "Event: " << eventTypeToString(event.type) << '\n'
+        << "Log entry ID: " << event.logEntryId << '\n'
+        << "Level: " << event.level << '\n'
+        << "Message: " << event.message << '\n'
+        << "Details: " << event.details << '\n'
+        << "-----------------------------\n";
+
+    output.flush();
+}
+
+// ================= EVENT STATISTICS OBSERVER =================
+
+// Оновлення статистики відповідно до типу події.
+void EventStatisticsObserver::update(const LogEvent& event) {
+    switch (event.type) {
+    case LogEventType::RecordReceived:
+        ++receivedCount;
+        break;
+
+    case LogEventType::StatusChanged:
+        ++statusChangedCount;
+        break;
+
+    case LogEventType::ProcessingCompleted:
+        ++completedCount;
+        break;
+    }
+}
+
+// Виведення статистики.
+void EventStatisticsObserver::printStatistics(
+    std::ostream& stream
+) const {
+    stream << "Received events: "
+        << receivedCount << '\n';
+
+    stream << "Status changes: "
+        << statusChangedCount << '\n';
+
+    stream << "Completed processing: "
+        << completedCount << '\n';
 }
